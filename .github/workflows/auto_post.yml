@@ -9,9 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Publish to Qiita"
-        uses: noraworld/github-to-qiita@v1.0.0
+        uses: noraworld/github-to-qiita@v1.0.1
         with:
           dir: "qiita"
           qiita_access_token: ${{ secrets.QIITA_ACCESS_TOKEN }}
           strict: false
-          
